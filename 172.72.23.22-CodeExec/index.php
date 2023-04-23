@@ -1,1 +1,1 @@
-<h1><?php echo "Hello CodeExec";?></h1>
+<h1><?php echo "Service for time";?></h1>

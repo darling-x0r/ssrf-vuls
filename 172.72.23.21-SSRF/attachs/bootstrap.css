@@ -5258,13 +5258,31 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
+  position: relative;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
-@media (min-width: 576px) {
+.jumbotron h1 {
+  position: relative;
+  color: #ffffff;
+  background-color: #353333;
+}
+
+.jumbotron:before {
+  content: "";
+  background-image: url("mrrobot.jpg");
+  background-size: cover;
+  position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+/*  opacity: 0.65;*/
+}
+
+@media (min-width: 100px) {
   .jumbotron {
     padding: 4rem 2rem;
   }
